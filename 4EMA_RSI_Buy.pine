@@ -1,3 +1,5 @@
+// Crypto for dummies version 1.01 - Buy Stop Light engaged 
+
 study("8,13,21,55 EMA with RSI Filter BUY", overlay=true)
 src = input(close)
 fast = ema(src, 8)
@@ -17,7 +19,7 @@ rsiFilter = rsi(close, 14)
 
 alertcondition(long and rsiFilter > 60, title='buy', message='buy')
 
-plot(fast, color=red, linewidth=4)
-plot(slow13, color=aqua, linewidth=4)
-plot(slow21, color=teal, linewidth=4)
-plot(slow55, color=blue, linewidth=4)
+plot(fast, color=blue, linewidth=2)
+plot(slow13, color=green, linewidth=2)
+plot(slow21, color=yellow, linewidth=2)
+plot(slow55, color=red, linewidth=2)
